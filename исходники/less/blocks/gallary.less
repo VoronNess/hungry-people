@@ -1,0 +1,24 @@
+.gallary {
+  margin: 0;
+  padding: 0;
+}
+
+.gallary__list {
+  margin: 0;
+  padding: 0;
+
+  & img {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+
+    & img {
+      height: 100%;
+    }
+  }
+}

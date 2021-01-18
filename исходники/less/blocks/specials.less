@@ -1,0 +1,96 @@
+.specials {
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: @bg-color;
+  background-image: url("../img/specialty's-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: @main-white;
+  margin: 0;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 40px;
+  }
+
+  .slider__controls {
+    text-align: center;
+
+    .dot {
+      border: none;
+      border-radius: 50%;
+      width: 6px;
+      height: 10px;
+      background-color: @border-opacity-grey;
+    }
+
+    .dot__current {
+      background-color: @main-white;
+    }
+  }
+}
+
+.specials__before-title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 10px;
+}
+
+.specials__title {
+  .title;
+}
+
+.specials__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .slide {
+    display: none;
+  }
+
+  .slide__current {
+    display: block;
+  }
+
+  .slide__img {
+    max-height: 270px;
+    width: 100%;
+
+    @media (min-width: @tablet-width) {
+      width: 324px;
+      height: 324px;
+    }
+  }
+}
+
+.specials__slide-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.specials__subheading {
+  margin: 0;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  padding: 0 20px;
+  text-align: center;
+  font-size: @mob-subheading-font-size;
+  line-height: @mob-subheading-line-height;
+  font-weight: bold;
+}
+
+.specials__text {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  text-align: center;
+  font-size: @paragraph-font-size;
+  line-height: @paragraph-line-height;
+}

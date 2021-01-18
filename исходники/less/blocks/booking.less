@@ -1,0 +1,173 @@
+.booking {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.booking__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.booking__wrapper-text {
+  @media (min-width: @tablet-width) {
+    .zero-padding-margin;
+  }
+}
+
+.booking__title {
+  .title;
+}
+
+.booking__form {
+  margin: 0;
+  padding: 0 20px;
+
+  & input,
+  & input::placeholder,
+  & option,
+  & select {
+    color: @text-opacity-grey;
+  }
+
+  &--name {
+    display: flex;
+    padding: 0 20px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background-color: @bg-input-grey;
+    border-radius: 5px;
+    min-height: 50px;
+    font-family: @main-font;
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  &--tel {
+    display: flex;
+    padding: 0 20px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background-color: @bg-input-grey;
+    border-radius: 5px;
+    min-height: 50px;
+    font-family: @main-font;
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  &--data {
+    padding: 0 20px;
+    margin: 0;
+    width: 45%;
+    box-sizing: border-box;
+    border: none;
+    background-color: @bg-input-grey;
+    border-radius: 5px;
+    min-height: 50px;
+    font-family: @main-font;
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  &--email {
+    padding: 0 20px;
+    margin: 0;
+    width: 53%;
+    box-sizing: border-box;
+    border: none;
+    background-color: @bg-input-grey;
+    border-radius: 5px;
+    min-height: 50px;
+    font-family: @main-font;
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  &--people {
+    padding: 0 20px;
+    margin: 0;
+    width: 45%;
+    box-sizing: border-box;
+    border: none;
+    background-color: @bg-input-grey;
+    border-radius: 5px;
+    min-height: 50px;
+    font-family: @main-font;
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  &--time {
+    padding: 0 20px;
+    margin: 0;
+    width: 53%;
+    box-sizing: border-box;
+    border: none;
+    background-color: @bg-input-grey;
+    border-radius: 5px;
+    min-height: 50px;
+    font-family: @main-font;
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--name,
+    &--tel {
+      width: 40%;
+    }
+  }
+}
+
+.booking__text-wrapper {
+  margin-top: 20px;
+}
+
+.booking__text {
+  margin: 0;
+  padding: 0 10px;
+  color: @text-opacity-grey;
+  font-size: 12px;
+  text-align: center;
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.booking__submit {
+  padding: 0;
+  margin: 0;
+  margin-top: 23px;
+  text-align: center;
+  background-color: @main-yellow;
+  outline: none;
+  border: none;
+  color: @main-white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: @main-font;
+  border-radius: 5px;
+  width: 285px;
+  height: 40px;
+}
+
+.booking__img {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 309px;
+    height: 309px;
+    margin-right: 50px;
+  }
+}
