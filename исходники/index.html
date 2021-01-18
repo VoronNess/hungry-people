@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ресторан итальянской кухни Hangry People</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body class="page">
+        <header class="header">
+            <nav class="header__nav header__nav--closed header__nav--nojs">
+              <button class="header__nav-toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+                <ul class="header__nav-list site-list">
+                    <li class="site-list__item">
+                        <a href="http:///#promo">Главная</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="http:///#about">О нас</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="http:///#team">Команда</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="http:///#booking">Заказать</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="http:///#menu">Меню</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="http:///#parties">Вечеринки</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="http:///#gallary">Галерея</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="http:///#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+          <h1 class="visually-hidden">Ресторан Hangry People</h1>
+          <section class="promo" id="promo">
+              <img class="logo" src="img/logo.png" width="150" height="150" alt="Hangry People">
+              <h2 class="promo__title">Ресторан</h2>
+                <img class="promo__logo" src="img/logo-mobile.svg" width="279" height="22" alt="Hangry People">
+                <div>
+                  <a class="promo__button promo__button--yellow" href="#"><span>Заказать столик</span></a>
+                  <a class="promo__button promo__button--grey" href="#">Перейти вниз</a>
+                </div>
+                <p class="promo__time">Пн-Пт 15:00-23:00, Сб-Вс 17:00-3:00</p>
+                <ul class="promo__list social">
+                    <li>
+                        <a class="social__link social__link--facebook" href="#">
+                            <span class="visually-hidden">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social__link social__link--twitter" href="#">
+                            <span class="visually-hidden">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social__link social__link--instagram" href="#">
+                            <span class="visually-hidden">Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+                <span class="next"></span>
+            </section>
+            <section class="about" id="about">
+
+                <div class="about__wrapper">
+                  <div>
+                    <h2 class="about__title">О нас</h2>
+                    <p class="about__subheading">Симпатичный европейский ресторан на Петровке раскрывает новые грани итальянской кухни</p>
+                    <p class="about__text">В самом центре Москвы мы открыли для гостей атмосферное пространство, где можно спрятаться от суеты и
+                      насладиться авторскими блюдами. Всего наш уютный ресторан готов вместить до 60 гостей.</p>
+                  </div>
+                  <img class="about__img" width="475" height="475" src="img/about-img.jpg" alt="фото интерьера ресторана">
+                </div>
+            </section>
+            <section class="team" id="team">
+              <h2 class="team__before-title">Наша команда</h2>
+              <div class="team__wrapper">
+                <div class="team__wrapper-text">
+
+                  <h3 class="team__title">Шеф-Повар</h3>
+                  <p class="team__subheading">Молодая, обаятельная, талантливая, она уже поработала в мишленовских ресторанах, покорила Лондон, теперь на очереди – Москва.</p>
+                  <p class="team__text">Знакомьтесь - Беатриче Марино, шеф ресторана Hungry People. Благодаря нашему шефу блюда похожи на произведения современного искусства, сочетая в себе традиции и изысканный вкус.</p>
+                </div>
+                <img class="team__img" width="320" height="300" src="img/chef.jpg" alt="шеф повар Беатриче Марино">
+              </div>
+              </section>
+            <section class="booking" id="booking">
+              <div class="booking__wrapper">
+                <div class="booking__wrapper-text">
+                  <h2 class="booking__title">Заказать столик</h2>
+                  <form class="booking__form">
+                          <input class="booking__form--name" type="text" placeholder="Имя">
+                          <input class="booking__form--tel" type="tel" placeholder="Телефон">
+                          <input class="booking__form--data" type="number" placeholder="Дата">
+                          <input class="booking__form--email" type="email" placeholder="Email">
+                          <select class="booking__form--people">
+                              <option>2</option>
+                              <option>от 3</option>
+                              <option>от 8</option>
+                          </select>
+                          <select class="booking__form--time">
+                              <option>18:00</option>
+                              <option>19:00</option>
+                              <option>20:00</option>
+                              <option>21:00</option>
+                              <option>22:00</option>
+                          </select>
+                          <div class="booking__text-wrapper">
+                            <p class="booking__text">Пн-Пт <b>15:00-23:00</b>, Сб-Вс <b>17:00-3:00</b></p>
+                            <p class="booking__text">Телефон: <a href="tel:88002002008"><b>8 800 200 20 08</b></a></p>
+                          </div>
+                      <button class="booking__submit" type="submit">Заказать</button>
+                    </form>
+                  </div>
+                <img class="booking__img" width="475" height="475" src="img/time.jpg" alt="">
+              </div>
+            </section>
+            <section class="menu" id="menu">
+                <h2 class="visually-hidden">Меню</h2>
+                <section class="specials">
+                    <h3 class="specials__before-title">Особые блюда</h3>
+                    <ul class="specials__list slider">
+                        <li class="slide slide__current">
+                          <div class="specials__slide-wrapper">
+
+                            <img class="slide__img" width="1000" height="905" src="img/lobster.jpg" alt="фото спагетти с лобстером">
+                            <div>
+                              <h4 class="specials__title">Спагетти с лобстером</h4>
+                              <p class="specials__subheading">Фирменный соус оттеняет и подчеркивает вкус лобстера.</p>
+                              <p class="specials__text">Целый лобстер запекается с томатами, к нему добавляется легкий микс-салат, чеснок и томаты. Паста тоже готовится на томатной основе с добавлением артишоков и каперсов. На выходе гостю приносят блюдо общим весом в 400 грамм, где 100-150 грамм — мясо лобстера, выловленного в Тунисе.</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="slide ">
+                            <h4 class="specials__title">Традиционная Неополитанская Пицца</h4>
+                            <img class="slide__img" width="1200" height="667" src="img/pizza.jpg" alt="фото неополетанской пиццы">
+                            <p class="specials__subheading">Гуляя по Неаполю, король Умберто 1 попробовал пиццу местных пиццайоло и с тех пор (17 век) в королевском меню появилась это блюдо!</p>
+                            <p class="specials__text">В нашем ресторане вы также можете отведать эту традиционную неополитанскую пиццу. По заветам именитых пиццайоло, готовим в специальной дровяной печи, месим тесто из особой, итальянской муки, используем только свежие овощи и моцареллу, купленные на Эко ферме.</p>
+                        </li>
+                        <li class="slide">
+                            <h4 class="specials__title">Джелато</h4>
+                            <img class="slide__img" width="475" height="475" src="img/jelato.jpg" alt="фото итальянского мороженного джелато">
+                            <p class="specials__subheading">Gelato - это знаменитый итальянский десерт, приготовленный вручную.</p>
+                            <p class="specials__text">Мы готовим его из свежего молока, сливок и сахара с добавлением натуральных сезонных фруктов, ягод, овощей и пряных трав, а также шоколада, ореха, сыра и других ингредиентов.</p>
+                        </li>
+                    </ul>
+                    <div class="slider__controls">
+                        <button class="dot dot__current" aria-label="Первый слайд"></button>
+                        <button class="dot" aria-label="Второй слайд"></button>
+                        <button class="dot" aria-label="Третий слайд"></button>
+                    </div>
+                </section>
+                <section class="menu-table">
+                    <h3 class="menu-table__title">Вкуснейшее меню</h3>
+                    <p class="menu-table__subheading">Насладитесь традицонными блюдами итальянской кухни с выдержанным авторским вином</p>
+                    <ul class="menu__type">
+                        <li>
+                          <button type="button">пицца</button>
+                        </li>
+                        <li>
+                          <button type="button">паста</button>
+                        </li>
+                        <li>
+                          <button type="button">десерты</button>
+                        </li>
+                        <li>
+                          <button type="button">вино</button>
+                        </li>
+                    </ul>
+                    <dl class="menu__list pizza-list ">
+                        <dt>Маргарита</dt>
+                        <dd>Моцарелла, томатный соус, базилик.</dd>
+                        <dt>Пеперони</dt>
+                        <dd>Томаты, базилик, моцарелла, пеперони.</dd>
+                        <dt>Страчателла</dt>
+                        <dd>Страчателла, руккола, оливки, черри, соус песто и томатный.</dd>
+                        <dt>Порчини</dt>
+                        <dd>Курица, грибы, сливки, моцарелла, сулугуни, лук фри и трюфельное масло.</dd>
+                        <dt>Толедо<dt>
+                        <dd>Баклажаны, болгарский перец, цукини, томатный соус, чеснок, кедровые орехи.</dd>
+                    </dl>
+                    <dl class="menu__list pasta-list">
+                      <dt>Спагетти с лобстером</dt>
+                      <dd>Спагетти, коньяк, столовое вино, лобстер, тимьян, сливки, лук-шалот.</dd>
+                      <dt>Тальятелле с курицей и грибами</dt>
+                      <dd>Тальятелли, куриное филе, свежие шампиньоны, лук фри, чесночное масло, пармезан, сливки.</dd>
+                      <dt>Порчини</dt>
+                      <dd>Курица, грибы, сливки, моцарелла, сулугуни, лук фри и трюфельное масло.</dd>
+                    </dl>
+                    <dl class="menu__list desert-list">
+                      <dt>Канноли</dt>
+                      <dd>Сицилийская трубочка с сырно-сливочным кремом на основе рикотты с шоколадной стружкой.</dd>
+                      <dt>Джелато</dt>
+                      <dd>Итальянское морженное ручной работы.</dd>
+                      <dt>Анжиолетти с солёной карамелью и орехами</dt>
+                      <dd>Пшеничное тесто, солёная карамель, арахис.</dd>
+                    </dl>
+                    <dl class="menu__list vine-list menu__current">
+                      <dt>Chianti Classico Riserva, Castello Banfi, 2016 г.</dt>
+                      <dd>Красное - элегантное, насыщенное, выдержанное в дубе.</dd>
+                      <dt>Grin Pinot Grigio, Volpe Pasini, 2018 г.</dt>
+                      <dd>Белое - легкое, освежающее, не выдержанное в дубе.</dd>
+                      <dt>Lambrusco Grasparossa di Castelvetro, Chiarli</dt>
+                      <dd>Красное - шипучее, легкое, фруктовое, не выдержанное в дубе.</dd>
+                      <dt>Romio Pinot Bianco Famoso, Caviro, 2018 г.</dt>
+                      <dd>Белое - легкое, освежающее, не выдержанное в дубе.</dd>
+                    </dl>
+                </section>
+            </section>
+            <section class="parties" id="parties">
+                <h2 class="parties__title">Vip-вечеринки</h2>
+                <ul class="parties__list">
+                    <li>
+                        <h3 class="visually-hidden">Свадьбы</h3>
+                        <img class="parties__img" width="260" height="475" src="img/weddings.jpg" alt="фото свадебных кольц">
+                    </li>
+                    <li>
+                        <h3 class="visually-hidden">Частные вечеринки</h3>
+                        <img class="parties__img" width="260" height="475" src="img/parties.jpg" alt="фото вечеринки">
+                    </li>
+                </ul>
+                <p class="parties__text">Заказать банкетный зал можно по телефону <a href="tel:tel:88002002008"><b>8 800 200 20 08</b></a> или через контактную форму</p>
+            </section>
+            <section class="gallary" id="gallary">
+                <h2 class="visually-hidden">Галерея</h2>
+                <ul class="gallary__list">
+                    <li>
+                        <img width="260" height="360" src="img/interior-1.jpg" alt="фото интерьера">
+                    </li>
+                    <li>
+                        <img width="260" height="360" src="img/interior-2.jpg" alt="фото интерьера">
+                    </li>
+                    <li>
+                        <img width="260" height="360" src="img/interior-3.jpg" alt="фото интерьера">
+                    </li>
+                    <li>
+                        <img width="260" height="360" src="img/interior-4.jpg" alt="фото интерьера">
+                    </li>
+                </ul>
+            </section>
+            <section class="contacts" id="contacts">
+                <h2 class="contacts__title">Контакты</h2>
+                <p class="contacts__subheading">Чтобы заказать столик, заполните пожалуста форму ниже</p>
+                <form class="contacts__form">
+                  <div class="contacts__form-wrapper">
+                    <input class="contacts__form--name" type="text" placeholder="Имя">
+                    <input class="contacts__form--email" type="email" placeholder="Email">
+                    <input class="contacts__form--tel" type="tel" placeholder="Телефон">
+                  </div>
+                    <textarea class="contacts__form--text">Текст сообщения</textarea>
+                    <dl class="contacts__address">
+                        <dt class="visually-hidden">Адрес</dt>
+                        <dd class="contacts__address--address"><address>ул. 1905 года, 10/1, Москва 123022 Россия</address></dd>
+                        <dt class="visually-hidden">Телефон</dt>
+                        <dd class="contacts__address--tel"><a href="tel:88002002008">8 800 200 20 08</a></dd>
+                        <dt class="visually-hidden">Email</dt>
+                        <dd class="contacts__address--email"><a href="mailto:hungry-people@gmail.com">hungry-people@gmail.com</a></dd>
+                    </dl>
+                    <div class="contacts__form--submit-wrapper"><button class="contacts__form--submit" type="submit">Отправить сообщение</button></div>
+                </form>
+                <img class="contacts__map" width="320" height="455" src="img/map.jpg" alt="карта адреса ул. 1905 года, 10/1, Москва 123022 Россия">
+            </section>
+        </main>
+        <footer class="footer">
+            <a class="footer__item" href="https://github.com/VoronNess">© Copyright VoronNess  2021</a>
+        </footer>
+    </body>
+</html>

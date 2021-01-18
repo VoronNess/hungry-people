@@ -1,0 +1,114 @@
+.promo {
+  padding-top: 50px;
+  font-family: "Open Sans", sans-serif;
+  background-color: @bg-color;
+  background-image: url("../img/header-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  color: @main-white;
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+}
+
+.promo__title {
+  margin: 0;
+  margin-top: 40px;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 10px;
+  line-height: @mob-subheading-line-height;
+  text-transform: uppercase;
+  font-weight: normal;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 80px;
+  }
+}
+
+.promo__logo {
+  margin-top: 10px;
+  margin-bottom: 44px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+    width: 500px;
+    height: 40px;
+  }
+}
+
+.logo {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 10px;
+  left: 132px;
+
+  @media (min-width: @tablet-width) {
+    left: 44%;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.promo__button {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: @main-font;
+  text-decoration: none;
+  color: @main-white;
+  padding: 9px 20px;
+  font-size: 8px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  border-radius: 5px;
+  font-weight: 700;
+
+  &--yellow {
+    margin-right: 12px;
+    background-color: @main-yellow;
+  }
+
+  &--grey {
+    background-color: transparent;
+    border: 1px solid @border-opacity-grey;
+  }
+}
+
+.promo__time {
+  margin: 0;
+  margin-top: 44px;
+  margin-bottom: 20px;
+  font-size: 8px;
+  line-height: 8px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: -30px;
+    top: 180px;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    transform: rotate(-90deg);
+  }
+}
+
+.promo__list {
+  list-style: none;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 150px;
+    right: 40px;
+  }
+}

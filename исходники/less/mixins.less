@@ -1,0 +1,46 @@
+.zero-padding-margin {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  .zero-padding-margin;
+  position: relative;
+  margin-bottom: 40px;
+  font-family: "Arsenal", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+
+  &::after {
+    content: "";
+    background-image: url("../img/yellow-line.png");
+    margin: auto;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 6px;
+    display: block;
+  }
+}
+
+.subtitle {
+  .zero-padding-margin;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  text-align: center;
+  font-size: @mob-subheading-font-size;
+  line-height: @mob-subheading-line-height;
+  font-weight: bold;
+}
+
+.text {
+  .zero-padding-margin;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  text-align: center;
+  font-size: @paragraph-font-size;
+  line-height: @paragraph-line-height;
+}

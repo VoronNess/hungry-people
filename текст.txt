@@ -31,7 +31,7 @@ Instagram
 Молодая, обаятельная, талантливая, она уже поработала в мишленовских ресторанах,
 покорила Амальфитанское побережье и Лондон, теперь на очереди – Москва.
 
-Знакомьтесь - Беатриче Марино, шеф ресторана Hungry People. 
+Знакомьтесь - Беатриче Марино, шеф ресторана Hungry People.
 Благодаря нашему шефу блюда похожи на произведения современного искусства,
 сочетая в себе традиции и изысканный вкус.
 
@@ -59,12 +59,12 @@ Email
 
 Традиционная Неополитанская Пицца
 
-Гуляя по Неаполю, король Умберто 1 попробовал пиццу местных 
+Гуляя по Неаполю, король Умберто 1 попробовал пиццу местных
 пиццайоло и с тех пор (17 век) в королевском меню появилась это блюдо!
 
 В нашем ресторане вы также можете отведать эту традиционную неополитанскую пиццу.
 По заветам именитых пиццайоло, готовим в специальной дровяной печи,
-месим тесто из особой, итальянской муки, используем только свежие овощи и моцареллу, купленные на 
+месим тесто из особой, итальянской муки, используем только свежие овощи и моцареллу, купленные на
 Эко ферме.
 
 Джелато
@@ -116,7 +116,7 @@ hungry-people@gmail.com
 
 
 Как добраться(скрытый заголовок)
- 
+
 ул. 1905 года, 10/1, Москва 123022 Россия
 
 © Copyright VoronNess  2021
@@ -133,6 +133,9 @@ https://www.figma.com/file/YMLK4BwcowltWe0ZyLgOyrOp/Hunger---Website-Template?no
 https://rim10.ru/o-neapolitanskoy-picce-fakty-osobennosti-i-luchshie-piccerii-v-neapole
 https://www.restoclub.ru/msk/search/vse-restorany-italjanskoj-kuhni-srednej-cenovoj-kategorii
 https://gelatomoscow.ru/about/gelato/
+https://delivery.pizzamento.ru/
+https://simplewine.ru/articles/academy/vina-italii-posobie-dlya-nachinayushchikh/
+
 картинки
 https://www.ideiasfood.com.br/pizza-fit-de-frigideira/
 https://www.restoclub.ru/review/top/samye-dorogie-bljuda-v-restoranah-peterburga
