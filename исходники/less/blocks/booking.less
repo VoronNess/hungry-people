@@ -3,11 +3,19 @@
   padding: 0;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 50px;
+  }
 }
 
 .booking__wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: center;
   }
 }
 
@@ -32,102 +40,67 @@
     color: @text-opacity-grey;
   }
 
-  &--name {
-    display: flex;
-    padding: 0 20px;
-    margin: 0;
-    width: 100%;
-    box-sizing: border-box;
-    border: none;
-    background-color: @bg-input-grey;
-    border-radius: 5px;
-    min-height: 50px;
-    font-family: @main-font;
-    font-size: 14px;
-    margin-bottom: 7px;
-  }
-
+  &--name,
   &--tel {
-    display: flex;
-    padding: 0 20px;
-    margin: 0;
+    .input;
     width: 100%;
-    box-sizing: border-box;
-    border: none;
-    background-color: @bg-input-grey;
-    border-radius: 5px;
-    min-height: 50px;
-    font-family: @main-font;
-    font-size: 14px;
-    margin-bottom: 7px;
   }
 
-  &--data {
-    padding: 0 20px;
-    margin: 0;
-    width: 45%;
-    box-sizing: border-box;
-    border: none;
-    background-color: @bg-input-grey;
-    border-radius: 5px;
-    min-height: 50px;
-    font-family: @main-font;
-    font-size: 14px;
-    margin-bottom: 7px;
-  }
-
-  &--email {
-    padding: 0 20px;
-    margin: 0;
-    width: 53%;
-    box-sizing: border-box;
-    border: none;
-    background-color: @bg-input-grey;
-    border-radius: 5px;
-    min-height: 50px;
-    font-family: @main-font;
-    font-size: 14px;
-    margin-bottom: 7px;
-  }
-
+  &--data,
   &--people {
-    padding: 0 20px;
-    margin: 0;
+    .input;
     width: 45%;
-    box-sizing: border-box;
-    border: none;
-    background-color: @bg-input-grey;
-    border-radius: 5px;
-    min-height: 50px;
-    font-family: @main-font;
-    font-size: 14px;
-    margin-bottom: 7px;
   }
 
+  &--email,
   &--time {
-    padding: 0 20px;
-    margin: 0;
+    .input;
     width: 53%;
-    box-sizing: border-box;
-    border: none;
-    background-color: @bg-input-grey;
-    border-radius: 5px;
-    min-height: 50px;
-    font-family: @main-font;
-    font-size: 14px;
-    margin-bottom: 7px;
   }
 
   @media (min-width: @tablet-width) {
-    &--name,
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--name {
+      width: 45%;
+    }
+
     &--tel {
+      width: 53%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--name,
+    &--tel,
+    &--data,
+    &--email,
+    &--people,
+    &--time {
+      height: 60px;
       width: 40%;
     }
   }
 }
 
+@media (min-width: @desktop-width) {
+  .booking__input-wrapper {
+    box-sizing: border-box;
+    width: 565px;
+    text-align: center;
+  }
+}
+
 .booking__text-wrapper {
   margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
 }
 
 .booking__text {
@@ -141,12 +114,17 @@
     text-decoration: none;
     color: inherit;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 14px;
+  }
 }
 
 .booking__submit {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   margin-top: 23px;
+  display: block;
   text-align: center;
   background-color: @main-yellow;
   outline: none;
@@ -166,8 +144,12 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 309px;
-    height: 309px;
-    margin-right: 50px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 500px;
+    height: 404px;
+    margin: 0;
   }
 }

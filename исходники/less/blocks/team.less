@@ -27,10 +27,19 @@
   text-transform: uppercase;
   font-weight: normal;
   font-size: 10px;
+  letter-spacing: 2px;
+
+  @media (min-width: @tablet-width) {
+    letter-spacing: 5px;
+  }
 }
 
 .team__title {
   .title;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+  }
 }
 
 .team__subheading {
@@ -47,6 +56,10 @@
   @media (min-width: @tablet-width) {
     order: 2;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 50px;
+  }
 }
 
 .team__text {
@@ -60,12 +73,16 @@
 
 .team__img {
   padding: 0;
-  margin: 0;
   display: block;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    margin-left: 40px;
-    width: 309px;
+    width: 367px;
     height: 309px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 500px;
+    height: 404px;
   }
 }
