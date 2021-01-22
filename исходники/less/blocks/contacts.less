@@ -3,6 +3,7 @@
   padding: 0;
   padding-top: 30px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .contacts__title {
@@ -24,73 +25,28 @@
   padding: 0 20px;
 
   &--name {
-    display: flex;
-    padding: 0 20px;
-    margin: 0;
-    width: 100%;
-    box-sizing: border-box;
-    border: none;
-    background-color: @bg-input-grey;
-    border-radius: 5px;
-    min-height: 50px;
-    font-family: @main-font;
-    font-size: 14px;
-    margin-bottom: 7px;
-    color: @text-opacity-grey;
+    .input-contacts;
   }
 
   &--email {
-    display: flex;
-    padding: 0 20px;
-    margin: 0;
-    width: 100%;
-    box-sizing: border-box;
-    border: none;
-    background-color: @bg-input-grey;
-    border-radius: 5px;
-    min-height: 50px;
-    font-family: @main-font;
-    font-size: 14px;
-    margin-bottom: 7px;
-    color: @text-opacity-grey;
+    .input-contacts;
   }
 
   &--tel {
-    display: flex;
-    padding: 0 20px;
-    margin: 0;
-    width: 100%;
-    box-sizing: border-box;
-    border: none;
-    background-color: @bg-input-grey;
-    border-radius: 5px;
-    min-height: 50px;
-    font-family: @main-font;
-    font-size: 14px;
-    margin-bottom: 7px;
-    color: @text-opacity-grey;
+    .input-contacts;
   }
 
   &--text {
-    display: flex;
+    .input-contacts;
     padding: 20px 20px;
-    margin: 0;
-    width: 100%;
-    box-sizing: border-box;
-    border: none;
-    background-color: @bg-input-grey;
-    border-radius: 5px;
-    min-height: 50px;
-    font-family: @main-font;
-    font-size: 14px;
-    margin-bottom: 7px;
-    color: @text-opacity-grey;
   }
 
   &--submit {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     margin-top: 23px;
+    margin-bottom: 30px;
+    display: block;
     text-align: center;
     background-color: @main-yellow;
     outline: none;
@@ -102,14 +58,15 @@
     border-radius: 5px;
     width: 285px;
     height: 40px;
-    margin-bottom: 30px;
   }
 
   @media (min-width: @tablet-width) {
+    padding: 0 40px;
+
     &--name,
     &--email,
     &--tel {
-      width: 30%;
+      width: 32%;
     }
 
     &--text {
@@ -118,6 +75,23 @@
 
     &--submit-wrapper {
       text-align: center;
+    }
+
+    &--submit {
+      height: 60px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 100px;
+    padding-right: 100px;
+
+    &--text {
+      min-height: 170px;
+    }
+
+    &--submit {
+      width: 400px;
     }
   }
 }
@@ -130,22 +104,16 @@
 }
 
 .contacts__address {
-  text-align: center;
-  margin: 0;
   margin-top: 20px;
   padding: 0;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  dd {
-    margin: 0;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &--address {
+    margin: 0;
+    padding-left: 15px;
+    position: relative;
     color: @text-opacity-grey;
     text-transform: uppercase;
     font-size: 10px;
@@ -153,7 +121,65 @@
 
     address {
       font-style: normal;
+      margin-bottom: 20px;
+
+      a {
+        height: 48px;
+      }
     }
+  }
+
+  &--address::before {
+    display: block;
+    content: "";
+    width: 11px;
+    height: 15px;
+    background-image: url("../img/icon-mark.png");
+    position: absolute;
+    left: 0;
+    top: -2px;
+  }
+
+  &--tel {
+    margin: 0;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  &--tel::before {
+    display: block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/icon-tel.png");
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+  }
+
+  &--email {
+    margin: 0;
+    padding-left: 20px;
+    position: relative;
+    margin-top: 15px;
+  }
+
+  &--email::before {
+    display: block;
+    content: "";
+    width: 14px;
+    height: 11px;
+    background-image: url("../img/icon-letter.png");
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
   }
 
   &--tel,
@@ -163,7 +189,24 @@
       color: @text-opacity-grey;
       font-size: 10px;
       font-weight: bold;
+      width: 100%;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+
+    &--tel,
+    &--email {
+      margin-left: 30px;
+    }
+  }
+}
+
+.contacts__address-submit-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -171,11 +214,66 @@
   padding: 0;
   margin: 0;
   display: flex;
-  max-height: 290px;
-  width: 150%;
+  height: 290px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     margin-top: 30px;
-    max-height: 480px;
+  }
+}
+
+.map__wrapper {
+  box-sizing: border-box;
+  margin: 0;
+  height: 303px;
+  position: relative;
+}
+
+.map__frame {
+  display: block;
+  position: relative;
+  margin: 0;
+  z-index: 2;
+  border: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.map__picture-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.map__picture {
+  position: absolute;
+  z-index: 1;
+  top: -305px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  width: 320px;
+  height: 300px;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    top: -300px;
+
+    img {
+      width: 768px;
+      height: 300px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+
+    img {
+      width: 1200px;
+      height: 300px;
+    }
   }
 }

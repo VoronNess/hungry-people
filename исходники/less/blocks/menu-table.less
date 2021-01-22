@@ -15,48 +15,93 @@
 }
 
 .menu-table__subheading {
-  margin: 0;
-  margin-bottom: 15px;
-  margin-top: 20px;
-  padding: 0 20px;
-  text-align: center;
-  font-size: @mob-subheading-font-size;
-  line-height: @mob-subheading-line-height;
-  font-weight: bold;
+  .subtitle;
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 200px;
+  }
 }
 
 .menu__type {
   padding: 0;
+  padding-top: 20px;
   margin: 0;
+  margin-bottom: 20px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    padding: 0 160px;
+    justify-content: center;
   }
 
-  & button {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-family: @main-font;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 12px;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
   }
 
-  & li :hover {
-    color: @text-opacity-grey;
+  & li:last-child {
+    .menu__nav::after {
+      display: none;
+    }
   }
+}
+
+.menu__nav {
+  box-sizing: border-box;
+  padding: 5px 10px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: @main-font;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  color: @text-opacity-grey;
+
+  &:hover {
+    color: @main-black;
+    text-decoration: underline;
+  }
+
+  &::after {
+    top: -5px;
+    right: 0;
+    position: absolute;
+    content: "";
+    height: 35px;
+    width: 2px;
+    background-color: @text-opacity-grey;
+    display: block;
+    z-index: 2;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 6px 20px;
+    font-size: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+  }
+}
+
+.menu__nav-current {
+  color: @main-black;
 }
 
 .menu__list {
   .zero-padding-margin;
   list-style: none;
   display: none;
-  padding-top: 30px;
+  padding: 30px 20px;
 
   & dt {
     .zero-padding-margin;
@@ -67,11 +112,19 @@
   & dd {
     .zero-padding-margin;
     font-size: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 14px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     padding: 40px 160px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 40px 360px;
   }
 }
 

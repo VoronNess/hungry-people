@@ -8,7 +8,7 @@
   position: relative;
   margin-bottom: 40px;
   font-family: "Arsenal", sans-serif;
-  font-size: 25px;
+  font-size: 21px;
   text-align: center;
   text-transform: uppercase;
   display: flex;
@@ -24,6 +24,10 @@
     height: 6px;
     display: block;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 28px;
+  }
 }
 
 .subtitle {
@@ -34,6 +38,10 @@
   font-size: @mob-subheading-font-size;
   line-height: @mob-subheading-line-height;
   font-weight: bold;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .text {
@@ -43,4 +51,33 @@
   text-align: center;
   font-size: @paragraph-font-size;
   line-height: @paragraph-line-height;
+}
+
+.input {
+  padding: 0 20px;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: @bg-input-grey;
+  border-radius: 5px;
+  min-height: 50px;
+  font-family: @main-font;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.input-contacts {
+  display: flex;
+  padding: 0 20px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background-color: @bg-input-grey;
+  border-radius: 5px;
+  min-height: 50px;
+  font-family: @main-font;
+  font-size: 14px;
+  margin-bottom: 7px;
+  color: @text-opacity-grey;
 }
