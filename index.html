@@ -12,17 +12,18 @@
 
 <body class="page">
   <header class="header">
-    <nav class="header__nav header__nav--closed header__nav--nojs"><button class="header__nav-toggle"
-        type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="header__nav header__nav--closed"><button class="header__nav-toggle" type="button"><span
+          class="visually-hidden">Открыть меню</span></button>
       <ul class="header__nav-list site-list">
         <li class="site-list__item"><a href="#promo">Главная</a></li>
         <li class="site-list__item"><a href="#about">О нас</a></li>
-        <li class="site-list__item"><a #team">Команда</a></li>
-        <li class="site-list__item"><a #booking">Заказать</a></li>
-        <li class="site-list__item"><a #menu">Меню</a></li>
-        <li class="site-list__item"><a #parties">Вечеринки</a></li>
-        <li class="site-list__item"><a #gallary">Галерея</a></li>
-        <li class="site-list__item"><a #contacts">Контакты</a></li>
+        <li class="site-list__item"><a href="#team">Команда</a></li>
+        <li class="site-list__item"><a href="#booking">Заказать</a></li>
+        <li class="site-list__item"><a href="#menu">Меню</a></li>
+        <li class="site-list__item"><a href="#parties">Вечеринки</a></li>
+        <li class="site-list__item"><a href="#gallary">Галерея</a></li>
+        <li class="site-list__item"><a href="#contacts">Контакты</a></li>
+
       </ul>
     </nav>
   </header>
@@ -86,12 +87,13 @@
       <div class="booking__wrapper">
         <div class="booking__wrapper-text">
           <h2 class="booking__title">Заказать столик</h2>
-          <form class="booking__form">
+          <form class="booking__form" method="POST" action="#" autocomplete="off">
             <div class="booking__input-wrapper"><input aria-label="Ваше имя" class="booking__form--name" type="text"
-                placeholder="Имя"> <input aria-label="Ваш телефон" class="booking__form--tel" type="tel"
-                placeholder="Телефон"> <input aria-label="Дата" id="booking-data" class="booking__form--data"
-                type="number" placeholder="Дата"> <input aria-label="Ваш email" class="booking__form--email"
-                type="email" placeholder="Email"> <select aria-label="Кол-во человек" class="booking__form--people">
+                placeholder="Имя" name="username" required minlength="2" maxlength="25"> <input aria-label="Ваш телефон"
+                class="booking__form--tel" type="tel" placeholder="Телефон" name="tel" required> <input
+                aria-label="Дата" id="booking-data" class="booking__form--data" type="number" placeholder="Дата"
+                name="data"> <input aria-label="Ваш email" class="booking__form--email" type="email" placeholder="Email"
+                name="email"> <select aria-label="Кол-во человек" class="booking__form--people" name="people">
                 <option>2</option>
                 <option>от 3</option>
                 <option>от 8</option>
@@ -196,44 +198,54 @@
           <li><button class="menu__nav" type="button">десерты</button></li>
           <li><button class="menu__nav" type="button">вино</button></li>
         </ul>
-        <dl class="menu__list pizza-list menu__current">
-          <dt>Толедо</dt>
-          <dd>Баклажаны, болгарский перец, цукини, томатный соус, чеснок, кедровые орехи.</dd>
-          <dt>Порчини</dt>
-          <dd>Курица, грибы, сливки, моцарелла, сулугуни, лук фри и трюфельное масло.</dd>
-          <dt>Маргарита</dt>
-          <dd>Моцарелла, томатный соус, базилик.</dd>
-          <dt>Пеперони</dt>
-          <dd>Томаты, базилик, моцарелла, пеперони.</dd>
-          <dt>Страчателла</dt>
-          <dd>Страчателла, руккола, оливки, черри, соус песто и томатный.</dd>
-        </dl>
-        <dl class="menu__list pasta-list">
-          <dt>Спагетти с лобстером</dt>
-          <dd>Спагетти, коньяк, столовое вино, лобстер, тимьян, сливки, лук-шалот.</dd>
-          <dt>Тальятелле с курицей и грибами</dt>
-          <dd>Тальятелли, куриное филе, свежие шампиньоны, лук фри, чесночное масло, пармезан, сливки.</dd>
-          <dt>Порчини</dt>
-          <dd>Курица, грибы, сливки, моцарелла, сулугуни, лук фри и трюфельное масло.</dd>
-        </dl>
-        <dl class="menu__list desert-list">
-          <dt>Канноли</dt>
-          <dd>Сицилийская трубочка с сырно-сливочным кремом на основе рикотты с шоколадной стружкой.</dd>
-          <dt>Джелато</dt>
-          <dd>Итальянское морженное ручной работы.</dd>
-          <dt>Анжиолетти с солёной карамелью и орехами</dt>
-          <dd>Пшеничное тесто, солёная карамель, арахис.</dd>
-        </dl>
-        <dl class="menu__list vine-list">
-          <dt>Chianti Classico Riserva, Castello Banfi, 2016 г.</dt>
-          <dd>Красное - элегантное, насыщенное, выдержанное в дубе.</dd>
-          <dt>Grin Pinot Grigio, Volpe Pasini, 2018 г.</dt>
-          <dd>Белое - легкое, освежающее, не выдержанное в дубе.</dd>
-          <dt>Lambrusco Grasparossa di Castelvetro, Chiarli</dt>
-          <dd>Красное - шипучее, легкое, фруктовое, не выдержанное в дубе.</dd>
-          <dt>Romio Pinot Bianco Famoso, Caviro, 2018 г.</dt>
-          <dd>Белое - легкое, освежающее, не выдержанное в дубе.</dd>
-        </dl>
+        <ul class="menu__slide-list">
+          <li class="menu__list pizza-list menu__current">
+            <dl>
+              <dt>Толедо</dt>
+              <dd>Баклажаны, болгарский перец, цукини, томатный соус, чеснок, кедровые орехи.</dd>
+              <dt>Порчини</dt>
+              <dd>Курица, грибы, сливки, моцарелла, сулугуни, лук фри и трюфельное масло.</dd>
+              <dt>Маргарита</dt>
+              <dd>Моцарелла, томатный соус, базилик.</dd>
+              <dt>Пеперони</dt>
+              <dd>Томаты, базилик, моцарелла, пеперони.</dd>
+              <dt>Страчателла</dt>
+              <dd>Страчателла, руккола, оливки, черри, соус песто и томатный.</dd>
+            </dl>
+          </li>
+          <li class="menu__list pasta-list">
+            <dl>
+              <dt>Спагетти с лобстером</dt>
+              <dd>Спагетти, коньяк, столовое вино, лобстер, тимьян, сливки, лук-шалот.</dd>
+              <dt>Тальятелле с курицей и грибами</dt>
+              <dd>Тальятелли, куриное филе, свежие шампиньоны, лук фри, чесночное масло, пармезан, сливки.</dd>
+              <dt>Порчини</dt>
+              <dd>Курица, грибы, сливки, моцарелла, сулугуни, лук фри и трюфельное масло.</dd>
+            </dl>
+          </li>
+          <li class="menu__list desert-list">
+            <dl>
+              <dt>Канноли</dt>
+              <dd>Сицилийская трубочка с сырно-сливочным кремом на основе рикотты с шоколадной стружкой.</dd>
+              <dt>Джелато</dt>
+              <dd>Итальянское морженное ручной работы.</dd>
+              <dt>Анжиолетти с солёной карамелью и орехами</dt>
+              <dd>Пшеничное тесто, солёная карамель, арахис.</dd>
+            </dl>
+          </li>
+          <li class="menu__list vine-list">
+            <dl>
+              <dt>Chianti Classico Riserva, Castello Banfi, 2016 г.</dt>
+              <dd>Красное - элегантное, насыщенное, выдержанное в дубе.</dd>
+              <dt>Grin Pinot Grigio, Volpe Pasini, 2018 г.</dt>
+              <dd>Белое - легкое, освежающее, не выдержанное в дубе.</dd>
+              <dt>Lambrusco Grasparossa di Castelvetro, Chiarli</dt>
+              <dd>Красное - шипучее, легкое, фруктовое, не выдержанное в дубе.</dd>
+              <dt>Romio Pinot Bianco Famoso, Caviro, 2018 г.</dt>
+              <dd>Белое - легкое, освежающее, не выдержанное в дубе.</dd>
+            </dl>
+          </li>
+        </ul>
       </section>
     </section>
     <section class="parties" id="parties">
@@ -314,12 +326,13 @@
     <section class="contacts" id="contacts">
       <h2 class="contacts__title">Контакты</h2>
       <p class="contacts__subheading">Чтобы заказать столик, заполните пожалуйста форму ниже</p>
-      <form class="contacts__form">
+      <form class="contacts__form" method="POST" action="#" autocomplete="off">
         <div class="contacts__form-wrapper"><input aria-label="Ваше имя" class="contacts__form--name" type="text"
-            placeholder="Имя"> <input aria-label="Ваш email" class="contacts__form--email" type="email"
-            placeholder="Email"> <input aria-label="Ваше телефон" class="contacts__form--tel" type="tel"
-            placeholder="Телефон"></div><textarea aria-label="Текст сообщения"
-          class="contacts__form--text">Текст сообщения</textarea>
+            placeholder="Имя" name="name" required minlength="2" maxlength="25"> <input aria-label="Ваш email"
+            class="contacts__form--email" type="email" placeholder="Email" name="email"> <input
+            aria-label="Ваше телефон" class="contacts__form--tel" type="tel" placeholder="Телефон" name="tel" required>
+        </div><textarea aria-label="Текст сообщения" class="contacts__form--text"
+          name="usertext">Текст сообщения</textarea>
         <div class="contacts__address-submit-wrapper">
           <dl class="contacts__address">
             <dt class="visually-hidden">Адрес</dt>
@@ -355,6 +368,14 @@
   </main>
   <footer class="footer"><a class="footer__item" href="https://github.com/VoronNess">© Copyright VoronNess 2021</a>
   </footer>
+  <section class="modal modal__booking-success">
+    <h2 class="visually-hidden">Уведомление об отправке данных формы</h2><span class="modal__success-icon"></span>
+    <h3 class="modal__title">Столик забронирован!</h3>
+    <p class="modal__text">В течение 10 минут с вами свяжится наш администратор, чтобы уточнить детали бронирования</p>
+    <button class="modal__btn-close" type="button" aria-label="Закрыть"></button>
+    <div class="modal__btns-wrapper"><a class="modal__btn-call" href="tel:88002002008">Позвонить в ресторан</a></div>
+  </section>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
