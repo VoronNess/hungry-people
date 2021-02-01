@@ -9,8 +9,6 @@
   "description": "Hangry People - ресторан итальянской кухни",
   "display": "fullscreen",
   "orientation":"portrait-primary",
-  "prefer_related_applications": "true",
-
   "icons": [
     {
       "src": "img/icons/logo-icon-72.png",
