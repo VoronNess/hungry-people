@@ -2,8 +2,6 @@
 
 const menuBtn = document.querySelector(".header__nav-toggle");
 const menu = document.querySelector(".header__nav");
-const menuContentOpened = document.querySelector(".header__nav--opened");
-const menuContentClosed = document.querySelector(".header__nav--closed");
 let menuShow = true;
 
 
@@ -18,7 +16,7 @@ menuBtn.addEventListener('click', () => {
     menu.classList.add("header__nav--closed");
     menuShow = true;
   }
-})
+});
 
 //Specials-slider
 const dots = document.querySelectorAll(".dot");
@@ -71,7 +69,7 @@ const closeNoticeBtn = successNotice.querySelector(".modal__btn-close");
 
 closeNoticeBtn.addEventListener("click", ()=>{
   successNotice.classList.remove("modal-show");
-})
+});
 
 bookingForm.addEventListener("submit",(evt) => {
   evt.preventDefault();
