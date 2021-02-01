@@ -6,7 +6,7 @@ let menuShow = true;
 
 
 menuBtn.addEventListener('click', () => {
-  if (menuShow) {
+  if (menuShow = true) {
     menu.classList.remove("header__nav--closed");
     menu.classList.add("header__nav--opened");
     menuShow = false;
