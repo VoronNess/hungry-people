@@ -28,11 +28,6 @@
       "type": "image/png"
     },
     {
-      "src": "img/logo-icon-144.png",
-      "sizes": "144x144",
-      "type": "image/png"
-    },
-    {
       "src": "img/logo-icon-152.png",
       "sizes": "152x152",
       "type": "image/png"
