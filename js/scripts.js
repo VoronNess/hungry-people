@@ -1,13 +1,13 @@
 //Open and close mobile menu
 
-const menuOpenBtn = document.querySelector(".header__nav-toggle");
+const menuBtn = document.querySelector(".header__nav-toggle");
 const menu = document.querySelector(".header__nav");
 const menuContentOpened = document.querySelector(".header__nav--opened");
 const menuContentClosed = document.querySelector(".header__nav--closed");
 let menuShow = true;
 
 
-menuOpenBtn.addEventListener('click', () => {
+menuBtn.addEventListener('click', () => {
   if (menuShow) {
     menu.classList.remove("header__nav--closed");
     menu.classList.add("header__nav--opened");
